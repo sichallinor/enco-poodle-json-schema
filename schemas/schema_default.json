@@ -4,7 +4,7 @@
   "properties": {
 
     "context": {
-      "type": "number",
+      "type": "string",
       "title": "Context",
       "enum": [{"value": "1", "label": "Schema"},{"value": "2", "label": "Mode"}],
       "attrs": {
