@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "title": "Default Schema",
+  "properties": {
+
+    "context": {
+      "type": "number",
+      "title": "Context",
+      "enum": [{"value": "1", "label": "Schema"},{"value": "2", "label": "Mode"}],
+      "attrs": {
+        "title": "Please select the context"
+      }
+    },
+
+    "title": {          
+      "type": "string",
+      "title": "Title"
+    },
+
+    "tags": {
+      "type": "string",
+      "title": "Tags",
+      "attrs": {
+        "title": "Please enter the Document's Description"
+      }
+    },
+
+    "data": {
+      "type": "string",
+      "title": "Data",
+      "attrs": {
+        "type": "textarea",
+        "title": "Please enter the Document's Description"
+      }
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+
+}
