@@ -24,10 +24,23 @@
         "type": "textarea",
         "title": "Please enter the Document's Description"
       }
+    },
+
+    "dtstart": {
+      "type": "string",
+      "title": "Document Date",
+      "attrs": {
+        "type": "datetime",
+      }
+    },
+
+    "dtend": {
+      "type": "string",
+      "title": "Document Date",
+      "attrs": {
+        "type": "datetime",
+      }
     }
-
-
-
 
   },
   "additionalProperties": false,
