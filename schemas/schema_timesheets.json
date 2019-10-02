@@ -1,19 +1,8 @@
 {
   "type": "object",
-  "title": "Default Schema",
+  "title": "Time Sheets",
   "properties": {
 
-    "context": {
-      "type": "string",
-      "title": "Context",
-      "enum": [
-                {"value": "1", "label": "Schema"},
-                {"value": "2", "label": "Mode"}
-              ],
-      "attrs": {
-        "title": "Please select the context"
-      }
-    },
 
     "title": {          
       "type": "string",
@@ -36,6 +25,9 @@
         "title": "Please enter the Document's Description"
       }
     }
+
+
+
 
   },
   "additionalProperties": false,
