@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "title": "Primatives",
+
+  "IdentityField": "",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "reference": {          
+      "type": "string",
+      "title": "Reference"
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

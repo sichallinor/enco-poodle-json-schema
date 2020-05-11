@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "title": "Schema",
+
+  "IdentityField": "displayname",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "title",
+  "ListCellDescriptionField": "title",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+    "title": {          
+      "type": "string",
+      "title": "Schema Title"
+    },
+
+    "IdentityField": {
+      "type": "string",
+      "title": "Identity Field"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+
+}

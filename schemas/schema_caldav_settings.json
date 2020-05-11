@@ -1,0 +1,55 @@
+{
+  "reference": "schema_caldav_settings",
+  "type": "object",
+  "title": "Calendar Settings",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "description",
+  "ListCellDescriptionField": "description",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+  
+    "id": {          
+      "type": "string",
+      "default":"TEST",
+      "attrs": {
+        "type": "hidden"
+      }
+    },
+    
+    "schema": {
+      "type": "string",
+      "default": "schema_settings",
+      "attrs": {
+        "type": "hidden"
+      }
+    },
+
+    "description": {          
+      "type": "string",
+      "title": "Description"
+    },
+
+    "userdisplayname": {          
+      "type": "string",
+      "title": "Your Name"
+    },
+
+    "username": {          
+      "type": "string",
+      "title": "User Name"
+    },
+
+    "password": {          
+      "type": "string",
+      "title": "Password"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["userdisplayname"]
+
+}

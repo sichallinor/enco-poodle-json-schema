@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "title": "CALDAV",
+
+  "IdentityField": "displayname",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "displayname",
+  "ListCellDescriptionField": "ref",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+    "displayname": {          
+      "type": "string",
+      "title": "Display Name"
+    },
+
+    "description": {
+      "type": "string",
+      "title": "Description"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["displayname"]
+
+}

@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "title": "Proxy",
+
+  "IdentityField": "",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+
+    "items": {
+      "title": "Items",
+      "description": "Proxy Data for Items Property",
+      "type": "object",
+      "properties": {
+
+
+
+	    "target": {          
+	      "type": "string",
+	      "title": "Target"
+	    },
+
+	    "property": {          
+	      "type": "string",
+	      "title": "Property"
+	    }
+
+      }
+    },
+
+
+    "models": {
+      "title": "Models",
+      "description": "Proxy Data for Models Property",
+      "type": "object",
+      "properties": {
+
+	    "target": {
+	      "note": "NOTE THIS IS A POLICY FIELD",
+	      "type": "object-ref",
+	      "title": "Target",
+	      "attrs": {
+	        "type": "selectobject",
+	        "dialog-reference": "dialog3"
+	      }
+	    },
+
+	    "property": {          
+	      "type": "string",
+	      "title": "Property"
+	    }
+
+      }
+    },
+
+
+
+    "schemas": {
+      "title": "Schemas",
+      "description": "Proxy Data for Schemas Property",
+      "type": "object",
+      "properties": {
+
+	    "target": {
+	      "note": "NOTE THIS IS A POLICY FIELD",
+	      "type": "object-ref",
+	      "title": "Target",
+	      "attrs": {
+	        "type": "selectobject",
+	        "dialog-reference": "dialog2"
+	      }
+	    },
+
+	    "property": {          
+	      "type": "string",
+	      "title": "Property"
+	    }
+
+      }
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}
+
+
+
+
+
+
+

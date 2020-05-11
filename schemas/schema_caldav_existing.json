@@ -1,0 +1,76 @@
+{
+  "reference": "schema_caldav_existing",
+  "type": "object",
+  "title": "Agenda Item",
+  "description": "modify the properties of your agenda item",
+
+  "IdentityField": "uid",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "summary",
+  "ListCellDescriptionField": "ref",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+    "summary": {          
+      "type": "string",
+      "title": "Title"
+    },
+
+    "calendar": {
+      "type": "string",
+      "title": "Calendar",
+      "attrs": {
+        "type": "text-disabled"
+      }
+    },
+
+    "type": {
+      "type": "string",
+      "title": "Item Type",
+      "attrs": {
+        "type": "text-disabled"
+      }
+    },
+
+
+    "dtstart": {
+      "type": "string",
+      "title": "Start Time",
+      "attrs": {
+        "type": "datetime"
+      }
+    },
+
+    "dtend": {
+      "type": "string",
+      "title": "End Time",
+      "attrs": {
+        "type": "datetime"
+      }
+    },
+
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+                {"value": "", "label": " - "},
+                {"value": "IN-PROGRESS", "label": "IN-PROGRESS"},
+                {"value": "COMPLETE", "label": "COMPLETE"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+    "categories": {          
+      "type": "string",
+      "title": "Categories"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+
+}

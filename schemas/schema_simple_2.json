@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "reference": "schema_simple_2",
+  "title": "Simple Schema 2",
+
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "name",
+  "ListCellDescriptionField": "name",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+    "name": {          
+      "type": "string",
+      "title": "Name"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["name"]
+
+}

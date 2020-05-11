@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "title": "Component",
+
+  "IdentityField": "",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "reference": {          
+      "type": "string",
+      "title": "Reference"
+    },
+
+
+    "type": {          
+      "type": "string",
+      "title": "Component Type",
+      "enum": [
+                {"value": "Main", "label": "Main"},
+                {"value": "HeaderBasic", "label": "HeaderBasic"},
+                {"value": "ItemsTable", "label": "ItemsTable"},
+                {"value": "ItemsFilter", "label": "ItemsFilter"},
+                {"value": "EditorJsonSchema", "label": "EditorJsonSchema"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+    "mode": {
+      "type": "object-ref",
+      "title": "Component Mode",
+      "attrs": {
+        "type": "selectobject"
+      }
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

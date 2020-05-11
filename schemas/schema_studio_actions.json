@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "title": "Actions",
+
+  "IdentityField": null,
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "reference": {
+      "type": "string",
+      "title": "Reference",
+      "enum": [
+                {"value": "action_after_startup", "label": "After Startup"},
+                {"value": "action_create_new", "label": "Create New"},
+                {"value": "action_delete", "label": "Delete"},
+                {"value": "action_store", "label": "Store"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+
+    "create_new":{          
+      "type": "boolean",
+      "title": "Function : Create New"
+    },
+
+    "delete":{          
+      "type": "boolean",
+      "title": "Function : Delete"
+    },
+
+    "store":{          
+      "type": "boolean",
+      "title": "Function : Store"
+    },
+
+    "passthrough":{          
+      "type": "boolean",
+      "title": "Passthrough"
+    },
+
+    "refresh_server":{          
+      "type": "boolean",
+      "title": "Refresh Items from Server"
+    },
+
+    "function": {          
+      "type": "string",
+      "title": "Function"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "reference": "schema_client",
+  "title": "Clients",
+  "properties": {
+
+    "context": {
+      "type": "string",
+      "title": "Context",
+      "enum": [
+                {"value": "1", "label": "Schema"},
+                {"value": "2", "label": "Mode"},
+                {"value": "10", "label": "Clients"}
+              ],
+      "attrs": {
+        "title": "Please select the context"
+      }
+    },
+
+    "title": {          
+      "type": "string",
+      "title": "Title"
+    },
+
+    "tags": {
+      "type": "string",
+      "title": "Tags",
+      "attrs": {
+        "title": "Please enter the Document's Description"
+      }
+    },
+
+    "data": {
+      "title": "Specific Document Data",
+      "description": "Additional information related to BF02_19",
+      "type": "object",
+      "properties": {
+
+
+        "active": {
+          "type": "boolean",
+          "title": "Active Client",
+          "description": "This client is active in current business.",
+          "default": false,
+          "attrs": {
+            "visiblelist":true,
+            "type": "switch"
+          }
+        },
+
+        "description": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 500,
+          "title": "Client Description",
+          "description": "Enter details of the client.",
+          "attrs": {
+            "visiblelist":true,
+            "type": "textarea"
+          }
+        },
+
+        "dtstart": {
+          "type": "string",
+          "title": "Start Time",
+          "attrs": {
+            "visiblelist":true,
+            "type": "datetime"
+          }
+        }
+
+
+
+      }
+    }
+
+
+
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "reference": "schema_wtd_hobby",
+  "title": "WTD Hobby",
+
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "name",
+  "ListCellDescriptionField": "name",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+    "name": {          
+      "type": "string",
+      "title": "Name"
+    },
+
+    "desc": {          
+      "type": "string",
+      "title": "Description",
+      "attrs": {
+        "type": "textarea"
+      }
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["name"]
+
+}

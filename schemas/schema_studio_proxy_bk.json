@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "title": "Proxy",
+
+  "IdentityField": "",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "items": {
+      "note": "NOTE THIS IS A POLICY FIELD",
+      "type": "object-ref",
+      "title": "Items Proxy",
+      "attrs": {
+        "type": "selectobject",
+        "dialog-reference": "dialog1"
+      }
+    },
+
+    "models": {
+      "note": "NOTE THIS IS A POLICY FIELD",
+      "type": "object-ref",
+      "title": "Models Proxy",
+      "attrs": {
+        "type": "selectobject",
+        "dialog-reference": "dialog3"
+      }
+    },
+
+    "schemas": {
+      "note": "NOTE THIS IS A POLICY FIELD",
+      "type": "object-ref",
+      "title": "Schemas Proxy",
+      "attrs": {
+        "type": "selectobject",
+        "dialog-reference": "dialog2"
+      }
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

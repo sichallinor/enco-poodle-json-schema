@@ -1,5 +1,6 @@
 {
   "type": "object",
+  "reference": "schema_default",
   "title": "Default Schema",
   "properties": {
 
@@ -7,8 +8,9 @@
       "type": "string",
       "title": "Context",
       "enum": [
-                {"value": "1", "label": "Schema"},
-                {"value": "2", "label": "Mode"}
+                {"value": "1", "label": "Mode"},
+                {"value": "2", "label": "Schema"},
+                {"value": "10", "label": "Clients"}
               ],
       "attrs": {
         "title": "Please select the context"

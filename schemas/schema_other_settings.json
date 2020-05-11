@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "title": "Calendar Settings",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "description",
+  "ListCellDescriptionField": "description",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+  
+    "id": {          
+      "type": "string",
+      "default":"TEST",
+      "attrs": {
+        "type": "hidden"
+      }
+    },
+    
+    "schema": {
+      "type": "string",
+      "default": "schema_settings",
+      "attrs": {
+        "type": "hidden"
+      }
+    },
+
+    "description": {          
+      "type": "string",
+      "title": "Description"
+    },
+
+    "other": {          
+      "type": "string",
+      "title": "Other"
+    }
+
+
+
+  },
+  "additionalProperties": false,
+  "required": ["userdisplayname"]
+
+}

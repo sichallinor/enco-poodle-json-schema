@@ -1,0 +1,84 @@
+{
+  "reference": "schema_caldav_new",
+  "type": "object",
+  "title": "Agenda Item",
+  "description": "create a new agenda item",
+
+  "IdentityField": "uid",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "summary",
+  "ListCellDescriptionField": "ref",
+  "ListCellIcon": "el-icon-collection",
+
+  "carousel" : {
+    "group_1":{
+      "page_1": ["summary"],
+      "page_2": ["dtstart"],
+      "page_3": ["dtend"]
+    }
+  },
+
+  "properties": {
+
+    "summary": {          
+      "type": "string",
+      "title": "Title"
+    },
+
+    "calendar": {
+      "type": "string",
+      "title": "Calendar"
+    },
+
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "enum": [
+                {"value": "VTODO", "label": "VTODO"},
+                {"value": "VEVENT", "label": "VEVENT"}
+              ],
+      "attrs": {
+        "title": "Please select the type"
+      }
+    },
+
+    "dtstart": {
+      "type": "string",
+      "title": "Start Time",
+      "attrs": {
+        "type": "datetime"
+      }
+    },
+
+    "dtend": {
+      "type": "string",
+      "title": "End Time",
+      "attrs": {
+        "type": "datetime"
+      }
+    },
+
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+                {"value": "", "label": " - "},
+                {"value": "IN-PROGRESS", "label": "IN-PROGRESS"},
+                {"value": "COMPLETE", "label": "COMPLETE"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+    "categories": {          
+      "type": "string",
+      "title": "Categories"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+
+}

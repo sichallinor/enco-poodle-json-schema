@@ -1,0 +1,149 @@
+{
+  "reference": "schema_studio_mode",
+  "type": "object",
+  "title": "Modes",
+
+  "IdentityField": "reference",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "reference",
+  "ListCellDescriptionField": "reference",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "reference": {          
+      "type": "string",
+      "title": "Reference"
+    },
+
+    "namespace": {
+      "type": "string",
+      "title": "NameSpace",
+      "attrs": {
+        "visiblelist": true
+      }
+    },
+
+    "layout": {
+      "type": "string",
+      "title": "Layout",
+      "enum": [
+                {"value": "LayoutBasic", "label": "Layout - Basic"},
+                {"value": "LayoutBasicWithHeader", "label": "Layout - Basic (with Header)"},
+                {"value": "LayoutOriginal", "label": "Layout - Original"},
+                {"value": "LayoutSplitHorizontal", "label": "Layout - Split Horizontal"},
+                {"value": "LayoutSplitHorizontalWithHeader", "label": "Layout - Split Horizontal (with Header)"},
+                {"value": "LayoutSplitVertical", "label": "Layout - Split Vertical"},
+                {"value": "LayoutFlowVertical", "label": "Layout - Flow Vertical"},
+                {"value": "LayoutTabs", "label": "Layout - Tabs"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+    
+    "layout_mode": {
+      "note": "NOTE THIS IS A POLICY FIELD",
+      "type": "object-ref",
+      "title": "Layout Mode",
+      "attrs": {
+        "type": "selectobject",
+        "dialog-reference": "dialog-layout-mode"
+      }
+    },
+
+
+    "layout_ratio": {
+      "type": "string",
+      "title": "Layout Ratio",
+      "enum": [
+                {"value": "20:80", "label": "20:80"},
+                {"value": "30:70", "label": "30:70"},
+                {"value": "40:60", "label": "40:60"},
+                {"value": "50:50", "label": "50:50"},
+                {"value": "60:40", "label": "60:40"},
+                {"value": "70:30", "label": "70:30"},
+                {"value": "80:20", "label": "80:20"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+    "can_create":{
+      "type": "boolean",
+      "title": "Can Create"
+    },
+
+    "can_update":{
+      "type": "boolean",
+      "title": "Can Update"
+    },
+
+    "can_nav_back":{
+      "type": "boolean",
+      "title": "Can Navigate Back"
+    },
+
+
+    "first_schema": {
+      "note": "NOTE THIS FIELD HAS A SETTER IN THE MODE OBJECT",
+      "type": "object-ref",
+      "title": "Schema",
+      "attrs": {
+        "type": "selectobject",
+        "dialog-reference": "dialog-schema"
+      }
+    },
+
+
+    "mode_type":{
+      "type": "string",
+      "title": "Mode Type",
+      "enum": [
+                {"value": "workflow", "label": "Workflow"},
+                {"value": "items", "label": "Items"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+
+    "apitype": {
+      "type": "string",
+      "title": "API Type",
+      "enum": [
+                {"value": "localstorage", "label": "Local Storage"},
+                {"value": "phpcrud", "label": "PHP CRUD"}
+              ],
+      "attrs": {
+        "title": "Please select the status"
+      }
+    },
+    "urlbase": {
+      "type": "string",
+      "title": "URL Base"
+    },
+    "urlpath": {
+      "type": "string",
+      "title": "URL Path"
+    },
+    "port": {
+      "type": "string",
+      "title": "Port"
+    },
+    "remote_search": {
+      "type": "string",
+      "title": "Remote Search"
+    },
+    "remote_context": {
+      "type": "string",
+      "title": "Remote Context"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

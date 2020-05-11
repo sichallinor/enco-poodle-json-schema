@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "reference": "schema_context",
+  "title": "Contexts",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "context",
+  "ListCellDescriptionField": "ref",
+  "ListCellIcon": "el-icon-collection",
+
+
+  "properties": {
+
+
+    "id": {          
+      "type": "string",
+      "title": "Identity",
+      "attrs": {
+        "type": "text-disabled"
+      }
+    },
+
+    "context": {          
+      "type": "string",
+      "title": "Context"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["context"]
+
+}

@@ -1,0 +1,33 @@
+{
+  "reference": "schema_settings",
+  "type": "object",
+  "title": "Settings",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "description",
+  "ListCellDescriptionField": "description",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "schema": {
+      "type": "string",
+      "default": "schema_settings",
+      "attrs": {
+        "type": "hidden"
+      }
+    },
+
+    "description": {          
+      "type": "string",
+      "title": "Description"
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

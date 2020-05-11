@@ -1,0 +1,25 @@
+{
+  "reference": "schema_simple",
+  "type": "object",
+  "title": "Simple",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "description",
+  "ListCellDescriptionField": "description",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+    
+    "description": {          
+      "type": "string",
+      "title": "Description"
+    }
+
+
+  },
+  "additionalProperties": false,
+  "required": []
+
+}

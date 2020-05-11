@@ -1,6 +1,14 @@
 {
   "type": "object",
   "title": "Time Sheets",
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "title",
+  "ListCellDescriptionField": "ref",
+  "ListCellIcon": "el-icon-collection",
+
   "properties": {
 
 
@@ -41,6 +49,7 @@
         "type": "datetime"
       }
     }
+
 
   },
   "additionalProperties": false,
