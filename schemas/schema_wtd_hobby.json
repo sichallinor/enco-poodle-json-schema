@@ -1,4 +1,4 @@
-{
+  {
   "type": "object",
   "reference": "schema_wtd_hobby",
   "title": "WTD Hobby",
@@ -23,6 +23,14 @@
       "title": "Description",
       "attrs": {
         "type": "textarea"
+      }
+    },
+
+    "tags": {          
+      "type": "string",
+      "title": "Tags",
+      "attrs": {
+        "type" : "tags"
       }
     }
 
