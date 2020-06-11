@@ -57,7 +57,7 @@ then
 	echo "v"$versionvar
 
 	# tag the repo push and to github
-	git tag "v"$versionvar
+	#git tag "v"$versionvar
 	git push origin master --tags
 	# publish to npm
 	npm publish
