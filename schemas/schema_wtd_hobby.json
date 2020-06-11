@@ -13,6 +13,7 @@
 
   "properties": {
 
+
     "name": {          
       "type": "string",
       "title": "Name"
@@ -23,6 +24,15 @@
       "title": "Description",
       "attrs": {
         "type": "textarea"
+      }
+    },
+
+    "p1id": {          
+      "type": "number",
+      "title": "Category",
+      "attrs": {
+        "type" : "selectdictionaryentry",
+        "dictionary" : "mode_crud_wtd_hobby_dictionary"
       }
     },
 
