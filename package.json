@@ -1,6 +1,6 @@
 {
   "name": "enco-poodle-json-schema",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Adds JSON SCHEMA functionality to the Enco project",
   "main": "index.js",
   "scripts": {
