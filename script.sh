@@ -36,7 +36,7 @@ fi
 
 
 # ------------------------------------------
-# INSTALL LATEST VERSION FROM NPM AND UPDATE package.json
+# PATCH THE VERSION NUMBER (update by 1) and PUBLISH
 if [ $COMMAND = "patch-publish" ]
 then
 	git add .
