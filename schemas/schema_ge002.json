@@ -1,7 +1,7 @@
   {
   "type": "object",
-  "reference": "schema_wtd_hobby",
-  "title": "WTD Hobby",
+  "reference": "schema_ge002",
+  "title": "GE002",
 
 
   "IdentityField": "id",
@@ -36,7 +36,7 @@
       }
     },
 
-    "tags": {          
+    "key1": {          
       "type": "string",
       "title": "Tags",
       "attrs": {

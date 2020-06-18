@@ -33,6 +33,8 @@ module.exports =  {
 
 	schema_wtd_hobby: require('./schemas/schema_wtd_hobby.json'),
 
+	schema_ge002: require('./schemas/schema_ge002.json'),
+
 	mode: { reference : "schemas", mode_type : "schemas", items : [] },
 	schemas: [],
 	schemasByRef: {},
