@@ -1,0 +1,38 @@
+  {
+  "type": "object",
+  "reference": "schema_ge002_bulk",
+  "title": "GE002 BULK",
+
+
+  "IdentityField": "id",
+
+  "ListCellComponent": "ListCellSmall",
+  "ListCellTitleField": "name",
+  "ListCellDescriptionField": "name",
+  "ListCellIcon": "el-icon-collection",
+
+  "properties": {
+
+
+    "p1id": {          
+      "type": "number",
+      "title": "Category",
+      "attrs": {
+        "type" : "selectdictionaryentry",
+        "dictionary" : "mode_dictionary"
+      }
+    },
+
+    "key1": {          
+      "type": "string",
+      "title": "Tags",
+      "attrs": {
+        "type" : "tags"
+      }
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["name"]
+
+}

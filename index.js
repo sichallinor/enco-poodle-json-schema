@@ -34,6 +34,7 @@ module.exports =  {
 	schema_wtd_hobby: require('./schemas/schema_wtd_hobby.json'),
 
 	schema_ge002: require('./schemas/schema_ge002.json'),
+	schema_ge002_bulk: require('./schemas/schema_ge002_bulk.json'),
 
 	mode: { reference : "schemas", mode_type : "schemas", items : [] },
 	schemas: [],
