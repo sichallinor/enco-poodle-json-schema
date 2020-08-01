@@ -19,7 +19,7 @@
       "title": "Category",
       "attrs": {
         "type" : "selectdictionaryentry",
-        "dictionary" : "mode_dictionary"
+        "dictionary" : "mode_ge002_dictionary"
       }
     },
 

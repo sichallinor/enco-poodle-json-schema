@@ -31,8 +31,9 @@
       "type": "number",
       "title": "Category",
       "attrs": {
-        "type" : "selectdictionaryentry",
-        "dictionary" : "mode_dictionary"
+
+        "type" : "selectobject",
+        "dictionary" : "mode_ge002_dictionary"
       }
     },
 
